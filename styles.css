@@ -27,6 +27,7 @@
 html {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -313,7 +314,7 @@ main {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  min-height: 150px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--warm-black);
@@ -355,4 +356,173 @@ main {
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
+}
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 60vh;
+  background: url('./assets/images/bitcoinbabyx2.jpg') center/cover no-repeat;
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.plans__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.plans__title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--white);
+}
+
+.plans__title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.plans-container__card {
+  position: relative;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: var(--black);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans-container__card.annual-plan {
+  border: 5px inset var(--bitcoin-orange);
+  animation: neon-orange-mode 10s infinite;
+}
+
+.plans-container__card.semester-plan {
+  border: 5px inset var(--secondary-blue);
+  animation: neon-blue-mode 10s infinite;
+}
+
+.plans-container__card.monthly-plan {
+  border: 5px inset #1DB954;
+  animation: neon-green-mode 10s infinite;
+}
+
+.plans-container__card .recommended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  padding: 6px;
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: var(--white);
+}
+
+.plan-card__title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--off-white);
+}
+
+.plan-card__price {
+  padding: 5px 0;
+  font-size: 5.3rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  text-align: center;
+  color: var(--off-white);
+}
+
+.plan-card__price sup {
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: 25px;
+}
+
+.plan-card__saving {
+  font-size: 1.2rem;
+  color: #757575
+}
+
+.plan-card__ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--white);
+}
+
+.annual-plan .plan-card__ca {
+  background-color: var(--bitcoin-orange);
+  border: 1px solid var(--bitcoin-orange);
+  animation: neon-orange-mode 10s infinite;
+}
+
+.semester-plan .plan-card__ca {
+  background-color: var(--secondary-blue);
+  border: 1px solid var(--secondary-blue);
+  animation: neon-blue-mode 10s infinite;
+}
+.monthly-plan .plan-card__ca {
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  animation: neon-green-mode 10s infinite;
+}
+
+@keyframes neon-orange-mode {
+  0% {border-color: var(--bitcoin-orange);}
+  25% {border-color: var(--soft-orange)}
+  50% {border-color: var(--bitcoin-orange);}
+  75% {border-color: var(--soft-orange)}
+  100% {border-color: var(--bitcoin-orange);}
+}
+
+@keyframes neon-blue-mode {
+  0% {border-color: var(--secondary-blue);}
+  25% {border-color: var(--soft-blue)}
+  50% {border-color: var(--secondary-blue);}
+  75% {border-color: var(--soft-blue)}
+  100% {border-color: var(--secondary-blue);}
+}
+
+@keyframes neon-green-mode {
+  0% {border-color: #1DB954;}
+  25% {border-color: #8cedae}
+  50% {border-color: #1DB954;}
+  75% {border-color: #8cedae}
+  100% {border-color: #1DB954;}
 }
