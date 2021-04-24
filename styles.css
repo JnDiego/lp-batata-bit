@@ -14,7 +14,7 @@
   --warm-black: #201E1C;
   --black: #282623;
   --grey: #BABABA;
-  --off-white: #FAF8F7;
+  --off-white: #dfdbd9;
   --white: #FFFFFF;
 }
 
@@ -71,7 +71,7 @@ header {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: var(--soft-orange);
+  color: var(--off-white);
 }
 
 .header__title-container .header__button {
@@ -136,7 +136,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6rem;
-  color: #757575;
+  color: var(--off-white);
 }
 
 .main-exchange-container__image {
@@ -161,7 +161,6 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  text-align: left;
   color: var(--bitcoin-orange);
 }
 
@@ -170,7 +169,6 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  text-align: left;
   color: var(--secondary-blue);
 }
 
@@ -221,7 +219,7 @@ main {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
-  color: #757575;
+  color: var(--off-white);
 }
 
 .currency-table__container .down {
@@ -307,7 +305,7 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: var(--off-white);
 }
 
 .product-detail__card {
@@ -355,14 +353,14 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: #c5c5c5;
 }
 
 .bitcoin-img-container {
   width: 100%;
   min-width: 320px;
   height: 60vh;
-  background: url('./assets/images/bitcoinbabyx2.jpg') center/cover no-repeat;
+  background: url('./assets/images/bitcoinbaby.jpg') center/cover no-repeat;
 }
 
 .bitcoin-img-container h2 {
@@ -402,12 +400,26 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #757575;
+  color: var(--off-white);
+}
+
+.main-exchange-container__slider {
+  display: flex;
+  gap: 30px;
+  height: 400px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 40px;
+}
+
+.main-exchange-container__tables-container {
+  scroll-snap-align: center;
 }
 
 .plans-container__slider {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   height: 316px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -419,10 +431,10 @@ main {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
-  margin: 50px 20px 0;
+  margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--black);
   border-radius: 15px;
@@ -452,7 +464,7 @@ main {
   left: calc(50% - 60px);
   font-size: 1.2rem;
   padding: 6px;
-  background-color: var(--bitcoin-orange);
+  background-color: #a76413;
   border-radius: 8px;
   color: var(--white);
 }
@@ -482,7 +494,7 @@ main {
 
 .plan-card__saving {
   font-size: 1.2rem;
-  color: #757575
+  color: var(--off-white)
 }
 
 .plan-card__ca {
@@ -498,18 +510,18 @@ main {
 }
 
 .annual-plan .plan-card__ca {
-  background-color: var(--bitcoin-orange);
+  background-color: #a76413;
   border: 1px solid var(--bitcoin-orange);
   animation: neon-orange-mode 10s infinite;
 }
 
 .semester-plan .plan-card__ca {
-  background-color: var(--secondary-blue);
+  background-color: #0f4366;
   border: 1px solid var(--secondary-blue);
   animation: neon-blue-mode 10s infinite;
 }
 .monthly-plan .plan-card__ca {
-  background-color: #1DB954;
+  background-color: #0f6e30;
   border: 1px solid #1DB954;
   animation: neon-green-mode 10s infinite;
 }
@@ -536,4 +548,34 @@ main {
   50% {border-color: #1DB954;}
   75% {border-color: #8cedae}
   100% {border-color: #1DB954;}
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--black);
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  margin: 10px 0;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--white);
 }

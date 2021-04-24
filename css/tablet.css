@@ -1,0 +1,26 @@
+.main-tables__container {
+  display: flex;
+  width: 930px;
+  margin: 0 auto;
+}
+
+.product-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 930px;
+  margin: 0 auto;
+}
+
+.bitcoin-img-container {
+  background: url('../assets/images/bitcoinbabyx2.jpg') center/cover no-repeat;
+}
+
+.plans-container__slider {
+  justify-content: center;
+  overflow-x: unset;
+}
+
+.main-exchange-container__slider {
+  justify-content: center;
+  overflow-x: unset;
+}
